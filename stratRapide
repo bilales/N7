@@ -1,0 +1,17 @@
+package allumettes;
+
+public class StrategieRapide implements Strategie {
+
+	@Override
+	public int getPrise(Jeu jeu) {
+		if (jeu.getNombreAllumettes()>3){
+			return 3;
+		}else
+			return jeu.getNombreAllumettes();
+	}
+	
+	public String ToString() {
+		return "Rapide";
+	}
+	
+}
