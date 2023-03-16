@@ -1,0 +1,12 @@
+package allumettes;
+import java.util.Scanner;
+
+public interface Strategie {
+
+	static Scanner scanner = new Scanner(System.in);
+	
+	public int getPrise(Jeu jeu) throws CoupInvalideException;
+
+	public String ToString();
+}
+
