@@ -1,0 +1,10 @@
+int modifier_via_pointeur(int* ptr) {
+    (*ptr) = 5;
+    return (*ptr);
+}
+
+main {
+    int valeur = 10;
+    valeur = modifier_via_pointeur(&valeur);
+    print valeur;
+}

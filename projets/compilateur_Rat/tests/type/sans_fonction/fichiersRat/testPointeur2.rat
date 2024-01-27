@@ -1,0 +1,5 @@
+test_affectation_dereferencement {
+    int valeur = 10;
+    int* ptr = &valeur;
+    print (*ptr);
+}

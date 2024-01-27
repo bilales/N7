@@ -1,0 +1,6 @@
+main{
+
+bool [] [] [] t = {{(new bool [(1+2)]),{false,false,false}, {true}}, {{true}}}; 
+
+print (((t [0])[0]) [1]); 
+}

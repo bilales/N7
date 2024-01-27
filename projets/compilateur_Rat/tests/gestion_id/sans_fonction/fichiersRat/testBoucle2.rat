@@ -1,0 +1,7 @@
+main {
+    int x = 10;
+    for (int x = 0; (x < 5); x = (x + 1)) {
+        print x; // Devrait imprimer les nombres de 0 à 4
+    }
+    print x; // Devrait imprimer 10, montrant que la variable x de la boucle for est locale
+}
