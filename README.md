@@ -1,1 +1,1 @@
-Bienvenue, vous trouverez ici les projets que j'ai réalise seul ou en équipe pendant mon parcours ingénieur à l'école ENSEEIHT INP Toulouse, vous trouverez dans chaque projet, un rapport au format pdf qui explique l'enjeu du projet.
+Bienvenue, vous trouverez ici les projets que j'ai réalisé seul ou en équipe pendant mon parcours ingénieur à l'école ENSEEIHT INP Toulouse. Vous trouverez dans chaque projet, un rapport au format pdf qui en explique l'enjeu.
