@@ -1,0 +1,27 @@
+function score_partition = calcul_score(y_pred, y)
+
+    y_pred_1 = y_pred==1;
+    y_pred_2 = y_pred == 2;
+    y_pred_3 = y_pred == 3;
+
+    Y_pred = [y_pred_1, y_pred_2, y_pred_3];
+
+
+    repartition= perms([1;2;3]);
+
+    score = zeros(1,6);
+
+    for i=1:6 
+        Y=Y_pred;
+        size(Y)
+        size(repartition(i, :))
+        Y= Y*repartition(i, :);
+        score(i) = sum(Y(1,:)==y) + sum(Y(2,:)==y) + sum(Y(3,:)==y)
+    end
+
+    score_partition = max(score)
+    
+
+
+end
+
