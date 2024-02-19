@@ -14,9 +14,9 @@ B = double(I(:,:,3));
 caracteristiques = [R(:) V(:) B(:) x(:) y(:)];
 
 % Appliquer k-means pour segmenter l'image
-% Le nombre de clusters (k) est à choisir selon le résultat souhaité
-k = 3; % Exemple : 3 pour segmenter en 3 couleurs principales
-[idx, ~] = kmeans(caracteristiques, k, 'Distance', 'sqEuclidean', 'MaxIter', 100, 'Replicates', 3);
+
+k = 3; % pour segmenter en 3 couleurs principales
+[idx, ~] = kmeans(caracteristiques, k, 'Distance', 'sqEuclidean', 'MaxIter', 100);
 
 % Remapper les étiquettes des clusters aux pixels pour visualiser le résultat
 idxImage = reshape(idx, hauteur, largeur);
@@ -25,14 +25,14 @@ idxImage = reshape(idx, hauteur, largeur);
 figure;
 
 % Afficher l'image originale
-subplot(1, 2, 1); % Diviser la fenêtre en 1 ligne, 2 colonnes, et sélectionner la 1ère cellule
+subplot(1, 2, 1); 
 imshow(I);
 title('Image Originale');
 
 % Afficher l'image segmentée
-subplot(1, 2, 2); % Sélectionner la 2ème cellule pour l'image segmentée
-imagesc(idxImage); % Utiliser imagesc pour afficher l'image segmentée
-colormap('jet'); % Utiliser une colormap pour différencier les clusters
+subplot(1, 2, 2);
+imagesc(idxImage); 
+colormap('jet'); 
 title('Image Segmentée');
-axis image off; % Ajuster les axes pour enlever les chiffres
+axis image off; 
 
