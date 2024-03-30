@@ -1,0 +1,3 @@
+[submodule "projets/AI_project/TrafficSignsClassification_DL"]
+	path = projets/AI_project/TrafficSignsClassification_DL
+	url = https://github.com/bilales/AI_projects.git
